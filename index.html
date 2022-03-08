@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel landing Page</title>
+    <link href="week2projectstyle.css" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+      .sidenav {
+       height: 100%;
+       width: 0;
+       position: absolute;
+       z-index: 1;
+       top: 0;
+       right: 0;
+       background-color: white;
+       overflow-x: hidden;
+       transition: 0.5s;
+       padding-top: 60px;
+       }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+        display: block;
+        transition: 0.3s;   
+      }
+      .sidenav a:hover {
+        color: burlywood;
+      }
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        }
+      .span1{
+        z-index: 1;
+        margin-left: -30px;
+      }
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+      </style>
+</head>
+<body>
+<div class="backvideo">
+   
+   <video class="backvideo" src="project2.mp4" autoplay muted loop></video>
+   <table class="header">
+    <tr>
+      <td style="padding-left: 50px;"> <h3>TRAVEL</h3></td>
+      <td style="float:right;margin-right: 30px;padding-top:6px;"><span style="font-size:30px;cursor:pointer;color:white;margin-left: -20px;" onclick="openNav()">&#9776; </span> </td>
+      </tr>
+  </table>
+    
+     <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">News</a>
+      <a href="#">Destination</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+     </div>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+     <div class="paragraph1">
+      
+         <p>
+         <h1>NEVER STOP TO</h1>
+         <h2>EXPLORING THE WORLD</h2>
+         <pre>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod
+         tempor incididunt ut labore et dolore magna aliqua, L enim ad minim veniam,
+         quis nostrud exercitation ullarco laboris nisi ut aliquip ex ea commodo
+         consequot
+         </pre>
+         <button class="button" type="button" onclick="window.location.href='First2.html';">EXPLORE</button></p>
+         <ul class="socialbut">
+           <li> <a href="#"><img src="facebook.png" class="imgsize"></a></li>
+           <li><a href="#"><img src="instagram.png" class="imgsize"></a></li>
+           <li><a href="#"><img src="twitter.png" class="imgsize"></a></li>
+         </ul>
+     </div>
+    
+</div>  
+         
+
+       
+</body>
+</html>
