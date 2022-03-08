@@ -10,7 +10,7 @@
    
 }
 .header{
-  position: relative;
+  position: absolute;
   margin-top: -800px;
   
   z-index: 2;
